@@ -8,8 +8,9 @@ BME280 temperature, pressure, and humidity driver for the Raspberry PI Pico writ
 
 
 ## WIRING
-COMING SOON
+<img width="1225" height="957" alt="image" src="https://github.com/user-attachments/assets/bf9a3d95-eec9-4dab-a6aa-12648febc206" />
 
+Note: In this image, I use an RP2350A and BME280, with I2C0 being used (pins 16/17). ANY i2C pins can be used and you are not limited to these
 
 ## How to use:
 1. Make sure to edit the serialData, SerialClk, and I2C pins at the top of bme280.c to the pins that you are planning to use. You can find that on Page 18 of the RP2350 DATA Sheet
