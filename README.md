@@ -19,4 +19,4 @@ How to use:
 
 
 - calculate_temp() must be called before calculate_humidity() and calculate_pressure() because it calculates t_fine which is used to find the pressure and humidity (because temperature is needed for both).
-- DESIGN TESTED ON THE RP2350B PROTON BOARD WITH PlatformIO
+- Design tested on the RP2350B Proton board with PlatformIO
