@@ -8,7 +8,7 @@ BME280 temperature, pressure, and humidity driver for the Raspberry PI Pico writ
 
 
 WIRING
-## COMING SOOJN
+## COMING SOON
 
 
 How to use:
