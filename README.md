@@ -7,11 +7,11 @@ BME280 temperature, pressure, and humidity driver for the Raspberry PI Pico writ
 [BME280 DATA SHEET](https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf)
 
 
-WIRING
-## COMING SOON
+## WIRING
+COMING SOON
 
 
-How to use:
+## How to use:
 1. Make sure to edit the serialData, SerialClk, and I2C pins at the top of bme280.c to the pins that you are planning to use. You can find that on Page 18 of the RP2350 DATA Sheet
 2. init_i2c() must be used to initialize the i2c peripheral on the RP2350 microcontroller. If this is not done before attempting to use then i2c will not function properly if at all.
 3. bme_read_calibration(BME280_ADDRESS) also needs to be called. This will test whether or not the BME280 chip is connected to the microcontroller properly or not. The expected return addresses can be found in "bme280.h".
