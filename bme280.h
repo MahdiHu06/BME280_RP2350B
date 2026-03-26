@@ -50,7 +50,7 @@
 
 ////////// BME Functions //////////
 void bme_read_calibration(uint8_t addr);
-
+void bme_init(uint8_t addr);
 // read from BME
 void read_temp(uint8_t bme_addr);
 void read_pressure(uint8_t bme_addr);
