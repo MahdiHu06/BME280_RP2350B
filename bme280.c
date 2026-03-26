@@ -12,6 +12,11 @@ uint serialClk = 0;
 i2c_inst_t *i2c = NULL;
 //------------------------------------//
 
+void bme_init(uint8_t addr) {
+    bme_write_register(addr, BME280_REGISTER_CONTROL, 0x27);
+    bme_write_register(addr, BME280_REGISTER_CONTROLHUMID, 0x01); // enable humidity
+}
+
 void init_i2c() {
     i2c_init(i2c, 100 * 1000);
     gpio_set_function(serialData, GPIO_FUNC_I2C);
